@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ZCCHomeListContentView">
+            <rect key="frame" x="0.0" y="0.0" width="170" height="147"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9pG-60-LxN">
+                    <rect key="frame" x="0.0" y="0.0" width="170" height="105"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="105" id="sar-Sq-IGJ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="李老师公开课" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B0B-Ae-hXG">
+                    <rect key="frame" x="48" y="115" width="74" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="9pG-60-LxN" secondAttribute="trailing" id="3L7-c3-SUO"/>
+                <constraint firstItem="B0B-Ae-hXG" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="4cn-yb-7dF"/>
+                <constraint firstItem="9pG-60-LxN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="acE-f6-Uj2"/>
+                <constraint firstItem="B0B-Ae-hXG" firstAttribute="top" secondItem="9pG-60-LxN" secondAttribute="bottom" constant="10" id="ci5-RN-led"/>
+                <constraint firstItem="9pG-60-LxN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ho1-Vb-YwS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="infosLabel" destination="B0B-Ae-hXG" id="wjr-hh-WAD"/>
+                <outlet property="picView" destination="9pG-60-LxN" id="dzh-dZ-bg7"/>
+            </connections>
+            <point key="canvasLocation" x="60" y="83"/>
+        </view>
+    </objects>
+</document>

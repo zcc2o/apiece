@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ZCCArticleContentView">
+            <rect key="frame" x="0.0" y="0.0" width="352" height="212"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="年轻的时候，我认为我肯定能成为伟大的艺术家但是我现在并不是。我有我的局限性。但是我知道，及时" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkx-oN-9DF">
+                    <rect key="frame" x="11" y="8" width="317" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uiZ-MC-DS6">
+                    <rect key="frame" x="11" y="180" width="30" height="14"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11.5"/>
+                    <color key="textColor" white="0.57352035980000005" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QCt-7E-vpl">
+                    <rect key="frame" x="311" y="180" width="30" height="14"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11.5"/>
+                    <color key="textColor" white="0.57352035980000005" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D64-Z0-Vqc">
+                    <rect key="frame" x="11" y="45" width="330" height="129"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="129" id="PdN-Av-tvr"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="QCt-7E-vpl" firstAttribute="top" secondItem="D64-Z0-Vqc" secondAttribute="bottom" constant="6" id="2BE-v0-LbJ"/>
+                <constraint firstAttribute="trailing" secondItem="D64-Z0-Vqc" secondAttribute="trailing" constant="11" id="4Jx-kP-9Yx"/>
+                <constraint firstItem="rkx-oN-9DF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="11" id="4gA-gu-8cu"/>
+                <constraint firstItem="QCt-7E-vpl" firstAttribute="trailing" secondItem="D64-Z0-Vqc" secondAttribute="trailing" id="7wH-Hp-XwS"/>
+                <constraint firstItem="uiZ-MC-DS6" firstAttribute="top" secondItem="D64-Z0-Vqc" secondAttribute="bottom" constant="6" id="Egu-Ds-5Wb"/>
+                <constraint firstItem="D64-Z0-Vqc" firstAttribute="top" secondItem="rkx-oN-9DF" secondAttribute="bottom" constant="8" id="Hkc-6Q-e9Z"/>
+                <constraint firstItem="uiZ-MC-DS6" firstAttribute="leading" secondItem="D64-Z0-Vqc" secondAttribute="leading" id="JcL-Gl-r01"/>
+                <constraint firstItem="rkx-oN-9DF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="Zj9-Cx-PSp"/>
+                <constraint firstItem="D64-Z0-Vqc" firstAttribute="leading" secondItem="rkx-oN-9DF" secondAttribute="leading" id="boC-sW-pOo"/>
+                <constraint firstAttribute="trailing" secondItem="rkx-oN-9DF" secondAttribute="trailing" constant="24" id="eh7-cp-Qz2"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="articleContent" destination="rkx-oN-9DF" id="cTr-pS-sFV"/>
+                <outlet property="articleImageView" destination="D64-Z0-Vqc" id="MsT-3u-HLZ"/>
+                <outlet property="author" destination="QCt-7E-vpl" id="4Pt-Z7-cvu"/>
+                <outlet property="dateLabel" destination="uiZ-MC-DS6" id="NLP-cU-URP"/>
+            </connections>
+            <point key="canvasLocation" x="12" y="48"/>
+        </view>
+    </objects>
+</document>

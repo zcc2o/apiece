@@ -1,0 +1,8 @@
+target ‘ApieceZCC’
+pod ‘SDWebImage’
+pod ‘AFNetworking’
+
+pod ‘MBProgressHUD’,’~> 1.0.0’
+pod ‘MJExtension’
+pod ‘ProgressHUD’
+pod ‘FMDB’

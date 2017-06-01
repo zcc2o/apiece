@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="audioCell" id="gTV-IL-0wX" customClass="ZCCAudioCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="191" height="274"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="191" height="274"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2ZZ-59-ytm">
+                        <rect key="frame" x="0.0" y="0.0" width="191" height="274"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r3d-pH-zLq">
+                                <rect key="frame" x="41" y="24" width="110" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="3qJ-BW-TBa"/>
+                                    <constraint firstAttribute="width" constant="110" id="htx-V2-90i"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lD-nn-9dw">
+                                <rect key="frame" x="77" y="146" width="36" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24r-AS-CYS">
+                                <rect key="frame" x="80" y="173" width="31" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.75" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kS8-aI-sfZ">
+                                <rect key="frame" x="71" y="54" width="50" height="50"/>
+                                <state key="normal" image="hearing_play"/>
+                                <connections>
+                                    <action selector="playerBtnClicekd:" destination="gTV-IL-0wX" eventType="touchUpInside" id="InK-kF-8k9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0lD-nn-9dw" firstAttribute="top" secondItem="r3d-pH-zLq" secondAttribute="bottom" constant="12" id="9Vu-tW-dNL"/>
+                            <constraint firstItem="r3d-pH-zLq" firstAttribute="centerX" secondItem="2ZZ-59-ytm" secondAttribute="centerX" id="9Wf-sC-Jhh"/>
+                            <constraint firstItem="24r-AS-CYS" firstAttribute="centerX" secondItem="2ZZ-59-ytm" secondAttribute="centerX" id="9dT-MX-kqt"/>
+                            <constraint firstItem="24r-AS-CYS" firstAttribute="top" secondItem="0lD-nn-9dw" secondAttribute="bottom" constant="10" id="ARl-Ec-YkB"/>
+                            <constraint firstItem="kS8-aI-sfZ" firstAttribute="centerX" secondItem="r3d-pH-zLq" secondAttribute="centerX" id="MXL-9U-goY"/>
+                            <constraint firstItem="0lD-nn-9dw" firstAttribute="centerX" secondItem="2ZZ-59-ytm" secondAttribute="centerX" id="itt-Yu-22V"/>
+                            <constraint firstItem="r3d-pH-zLq" firstAttribute="top" secondItem="2ZZ-59-ytm" secondAttribute="top" constant="24" id="moC-d8-nxV"/>
+                            <constraint firstItem="kS8-aI-sfZ" firstAttribute="centerY" secondItem="r3d-pH-zLq" secondAttribute="centerY" id="o5A-0C-c4f"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="2ZZ-59-ytm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="SBj-uN-6um"/>
+                <constraint firstAttribute="bottom" secondItem="2ZZ-59-ytm" secondAttribute="bottom" id="eHz-I3-Eow"/>
+                <constraint firstAttribute="trailing" secondItem="2ZZ-59-ytm" secondAttribute="trailing" id="fXZ-gS-EMO"/>
+                <constraint firstItem="2ZZ-59-ytm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="tF3-1X-wKh"/>
+            </constraints>
+            <size key="customSize" width="191" height="274"/>
+            <connections>
+                <outlet property="audioImageView" destination="r3d-pH-zLq" id="05l-0h-gp2"/>
+                <outlet property="audioIntroduce" destination="24r-AS-CYS" id="XNv-b5-9SR"/>
+                <outlet property="audioName" destination="0lD-nn-9dw" id="SND-5n-ZF5"/>
+            </connections>
+            <point key="canvasLocation" x="102.5" y="195"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="hearing_play" width="50" height="50"/>
+    </resources>
+</document>
